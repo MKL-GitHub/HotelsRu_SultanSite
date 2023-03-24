@@ -1,0 +1,57 @@
+[
+    {
+        "image_url": "https://example.com/product1.jpg",
+        "name": "Шампунь для волос",
+        "size_type": "объем",
+        "size": "250 мл",
+        "barcode": "123456789",
+        "manufacturer": "Компания-производитель",
+        "brand": "Название бренда",
+        "description": "Описание товара",
+        "price": 200
+    },
+    {
+        "image_url": "https://example.com/product2.jpg",
+        "name": "Крем для рук",
+        "size_type": "вес",
+        "size": "50 г",
+        "barcode": "234567890",
+        "manufacturer": "Компания-производитель",
+        "brand": "Название бренда",
+        "description": "Описание товара",
+        "price": 100
+    },
+    {
+        "image_url": "https://example.com/product3.jpg",
+        "name": "Гель для душа",
+        "size_type": "объем",
+        "size": "500 мл",
+        "barcode": "345678901",
+        "manufacturer": "Компания-производитель",
+        "brand": "Название бренда",
+        "description": "Описание товара",
+        "price": 300
+    },
+    {
+        "image_url": "https://example.com/product4.jpg",
+        "name": "Зубная паста",
+        "size_type": "вес",
+        "size": "100 г",
+        "barcode": "456789012",
+        "manufacturer": "Компания-производитель",
+        "brand": "Название бренда",
+        "description": "Описание товара",
+        "price": 150
+    },
+    {
+        "image_url": "https://example.com/product5.jpg",
+        "name": "Дезодорант",
+        "size_type": "вес",
+        "size": "75 г",
+        "barcode": "567890123",
+        "manufacturer": "Компания-производитель",
+        "brand": "Название бренда",
+        "description": "Описание товара",
+        "price": 80
+    }
+]

@@ -1,0 +1,12 @@
+.HeaderTopMenu {
+    display: flex;
+    gap: 60px;
+    
+    & li {
+        white-space: nowrap;
+    }
+
+    &__Link {
+        // color: red;
+    }
+}

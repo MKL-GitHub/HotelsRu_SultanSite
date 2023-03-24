@@ -1,0 +1,14 @@
+.HeaderTopContactInfo {
+    display: flex;
+    gap: 40px;
+
+    & li {
+        display: flex;
+        gap: 17px;
+        
+        & div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
