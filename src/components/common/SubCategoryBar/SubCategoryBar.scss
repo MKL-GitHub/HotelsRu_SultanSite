@@ -1,0 +1,13 @@
+.SubCategoryBar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+    margin-bottom: 48px;
+
+    &>li>* {
+        line-height: 17px;
+        text-align: center;
+        color: #3F4E65;
+
+    }
+}

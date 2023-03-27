@@ -1,9 +1,11 @@
 body {
     background-color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 section {
-    max-width: 1950px;
+    // max-width: 1480px;
+    max-width: 1580px;
     margin: 0 auto;
-    padding: 0 15%;
+    padding: 0 100px;
 }

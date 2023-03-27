@@ -4,6 +4,7 @@ import App from './components/App/App';
 
 import "./nulling-styles.css";
 import "./index.scss";
+import "./fonts/Inter/stylesheet.css";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

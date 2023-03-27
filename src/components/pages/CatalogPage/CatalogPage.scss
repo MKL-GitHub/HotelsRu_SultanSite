@@ -1,0 +1,18 @@
+.CatalogPage {
+
+    &__Main {
+        margin-bottom: 100px;
+    }
+
+    &__TitleBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    }
+
+    &__MainContent {
+        display: flex;
+        gap: 108px;
+    }
+}

@@ -1,0 +1,72 @@
+.Footer {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        height: 100%;
+        width: 100vw;
+        transform: translateX(-50%);
+        background: #3f4e65;
+        z-index: -10;
+    }
+
+    &>ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 70px 0;
+        color: white;
+        white-space: nowrap;
+
+        &>li {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    &__Title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    &__List {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &>li {
+            line-height: 150%;
+        }
+
+        & li * {
+            color: white;
+        }
+    }
+
+    &__SocialNetworks {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__CreditCards {
+        display: flex;
+        gap: 5px;
+    }
+
+    & .ContactInfoCall_White {
+        & * {
+            color: white;
+            text-align: left;
+        }
+    }
+
+    & .ContactInfoMail_White {
+        &>li>*, &>li {
+            color: white;
+        }
+    }
+}

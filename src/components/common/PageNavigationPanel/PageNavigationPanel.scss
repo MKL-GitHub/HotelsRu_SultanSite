@@ -1,0 +1,29 @@
+.PageNavigationPanel {
+    display: flex;
+    gap: 20px;
+    margin: 45px 0;
+
+    & li {
+        position: relative;
+
+        & * {
+            font-weight: 300;
+            color: #3F4E65;
+        }
+
+        &:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            right: -11.5px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 16px;
+            opacity: 0.1;
+            border: 1px dashed #3F4E65;
+        }
+    }
+
+    & li:last-child {
+        opacity: 0.5;
+    }
+}

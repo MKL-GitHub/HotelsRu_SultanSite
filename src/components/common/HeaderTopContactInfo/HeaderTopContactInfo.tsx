@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import ContactInfoLocation from '../ContactInfoLocation/ContactInfoLocation';
+import ContactInfoMail from '../ContactInfoMail/ContactInfoMail';
 
 import "./HeaderTopContactInfo.scss";
 
@@ -15,18 +17,11 @@ const HeaderTopContactInfo: FC<HeaderTopContactInfoProps> = () => {
         <ul className="HeaderTopContactInfo">
             <li>
                 <img src={locationImg} alt="Расположение" />
-                <div>
-                    <span>г. Кокчетав, ул. Ж. Ташенова 129Б</span>
-                    <span>(Рынок Восточный)</span>
-                </div>
-
+                <ContactInfoLocation />
             </li>
             <li>
                 <img src={mailImg} alt="Почта" />
-                <div>
-                    <Link to={""}>opt.sultan@mail.ru</Link>
-                    <span>На связи в любое время</span>
-                </div>
+                <ContactInfoMail />
             </li>
         </ul>
     );

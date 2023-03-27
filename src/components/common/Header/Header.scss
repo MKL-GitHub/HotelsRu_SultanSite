@@ -1,11 +1,5 @@
 .Header {
-    // display: flex;
-    // flex-direction: column;
-    // background-color: rgba(0, 0, 255, 0.262);
-    // width: 100vw;
-    // height: 170px;
-    // width: 100%;
-    &> * {
+    &>* {
         position: relative;
 
         &::before {
@@ -15,7 +9,9 @@
             transform: translateX(-50%);
             width: 100vw;
             height: 100%;
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid #3F4E65;
+            opacity: 0.2;
+            z-index: -10;
         }
     }
 }

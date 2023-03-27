@@ -1,0 +1,35 @@
+.HeaderBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 110px;
+
+    &__Right {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        &>*:not(:last-child) {
+            position: relative;
+        }
+
+        &>*:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 49px;
+            opacity: 0.1;
+            border: 1px dashed #3F4E65;
+        }
+    }
+
+    &__CallOrder {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        white-space: nowrap;
+    }
+}

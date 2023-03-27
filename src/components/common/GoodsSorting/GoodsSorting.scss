@@ -1,0 +1,34 @@
+.GoodsSorting {
+    display: flex;
+    gap: 5px;
+
+    & li:last-child {
+        position: relative;
+        display: flex;
+        top: -7px;
+        align-self: flex-end;
+    }
+
+    & li,
+    & select {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    & li select {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        border: none;
+        background: transparent;
+        color: #3F4E65;
+        cursor: pointer;
+    }
+
+    &__Title {
+        font-weight: 500;
+        color: #111111;
+    }
+}

@@ -1,0 +1,47 @@
+.FooterCompanyProfile {
+    max-width: 300px;
+    white-space: normal;
+
+    & * {
+        line-height: 150%;
+    }
+
+    &>:nth-child(1) {
+        filter: invert(100%) contrast(1000%);
+        margin-bottom: 15px;
+    }
+
+    &>:nth-child(2) {
+        font-size: 16px;
+        margin-bottom: 45px;
+    }
+
+    &>:nth-child(3) {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    &>:nth-child(4) {
+        background-color: white;
+        width: 282px;
+
+        & input {
+            background-color: white;
+            font-size: 13px;
+            color: black;
+
+            &:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 30px white inset !important;
+                // -webkit-text-fill-color: black !important;
+            }
+        }
+
+        & button {
+            & img {
+                padding-left: 2px;
+                padding-top: 2px;
+            }
+        }
+    }
+
+}

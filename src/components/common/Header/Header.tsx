@@ -2,7 +2,6 @@ import { FC } from 'react';
 import HeaderBottom from '../HeaderBottom/HeaderBottom';
 import HeaderTop from '../HeaderTop/HeaderTop';
 
-// import styles from "./Header.module.scss";
 import "./Header.scss";
 
 interface HeaderProps {

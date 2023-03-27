@@ -4,4 +4,29 @@
     align-items: center;
     height: 60px;
     white-space: nowrap;
+    gap: 30px;
+}
+
+.HeaderTopMenu {
+    display: flex;
+    gap: 60px;
+    
+    & li {
+        position: relative;
+        cursor: pointer;
+
+        &:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 29px;
+            opacity: 0.1;
+            border: 1px dashed #3F4E65;
+        }
+        & * {
+            color: #3F4E65;
+        }
+    }
 }
