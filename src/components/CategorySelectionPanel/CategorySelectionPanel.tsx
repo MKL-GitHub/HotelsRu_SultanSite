@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import GoodParamFilter from '../GoodParamFilter/GoodParamFilter';
-import PriceFilter from '../PriceFilter/PriceFilter';
+import GoodParamFilter from './GoodParamFilter/GoodParamFilter';
+import PriceFilter from './PriceFilter/PriceFilter';
 import goods from "../../data/goods.json";
 
 import "./CategorySelectionPanel.scss";

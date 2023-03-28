@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import SiteMenu from '../SiteMenu/SiteMenu';
 import SiteCategories from '../SiteCategories/SiteCategories';
-import PriceListButton from '../PriceListButton/PriceListButton';
-import ContactInfoCall from '../ContactInfoCall/ContactInfoCall';
-import ContactInfoMail from '../ContactInfoMail/ContactInfoMail';
+import PriceListButton from '../UI/PriceListButton/PriceListButton';
+import ContactInfoCall from '../UI/ContactInfoCall/ContactInfoCall';
+import ContactInfoMail from '../UI/ContactInfoMail/ContactInfoMail';
 import FooterCompanyProfile from './FooterCompanyProfile/FooterCompanyProfile';
 
 import "./Footer.scss";
@@ -13,9 +13,6 @@ import whatsappImg from "./svg/whatsapp.svg";
 import telegramImg from "./svg/telegram.svg";
 import visaImg from "./svg/visa.svg";
 import mastercardImg from "./svg/mastercard.svg";
-
-
-
 
 interface FooterProps {
 

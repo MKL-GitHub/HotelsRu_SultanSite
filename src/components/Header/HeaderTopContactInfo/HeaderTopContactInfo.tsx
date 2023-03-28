@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import ContactInfoLocation from '../../ContactInfoLocation/ContactInfoLocation';
-import ContactInfoMail from '../../ContactInfoMail/ContactInfoMail';
+import ContactInfoLocation from '../../UI/ContactInfoLocation/ContactInfoLocation';
+import ContactInfoMail from '../../UI/ContactInfoMail/ContactInfoMail';
 
 import "./HeaderTopContactInfo.scss";
 

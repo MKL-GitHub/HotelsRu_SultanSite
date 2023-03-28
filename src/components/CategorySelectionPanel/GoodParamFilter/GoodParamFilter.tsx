@@ -1,9 +1,9 @@
 import { FC, useState } from 'react';
-import InputWithButtonAndImage from '../InputWithButtonAndImage/InputWithButtonAndImage';
+import InputWithButtonAndImage from '../../UI/InputWithButtonAndImage/InputWithButtonAndImage';
 
 import "./GoodParamFilter.scss";
 
-import triangleImg from "../../svg/triangle.svg";
+import triangleImg from "../../../svg/triangle.svg";
 
 interface GoodParamFilterProps {
     title: string;

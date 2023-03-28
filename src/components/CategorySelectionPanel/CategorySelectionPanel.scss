@@ -22,7 +22,7 @@
             &:not(:last-child)::before {
                 content: "";
                 position: absolute;
-                bottom: -22px;
+                bottom: -20.5px;
                 width: 100%;
                 opacity: 0.1;
                 border: 1px dashed #3F4E65;
@@ -35,6 +35,6 @@
     }
 
     &__SubCategoriesList {
-        background-color: red;
+        // background-color: red;
     }
 }

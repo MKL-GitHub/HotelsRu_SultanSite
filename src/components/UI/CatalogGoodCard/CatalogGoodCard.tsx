@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import ButtonWithTextAndImage from '../ButtonWithTextAndImage/ButtonWithTextAndImage';
-import IGood from '../../data/IGood';
+import IGood from '../../../data/IGood';
 
 import "./CatalogGoodCard.scss";
 

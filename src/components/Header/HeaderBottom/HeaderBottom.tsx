@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import ButtonWithTextAndImage from '../../ButtonWithTextAndImage/ButtonWithTextAndImage';
-import InputWithButtonAndImage from '../../InputWithButtonAndImage/InputWithButtonAndImage';
-import ContactInfoCall from '../../ContactInfoCall/ContactInfoCall';
-import PriceListButton from '../../PriceListButton/PriceListButton';
+import ButtonWithTextAndImage from '../../UI/ButtonWithTextAndImage/ButtonWithTextAndImage';
+import InputWithButtonAndImage from '../../UI/InputWithButtonAndImage/InputWithButtonAndImage';
+import ContactInfoCall from '../../UI/ContactInfoCall/ContactInfoCall';
+import PriceListButton from '../../UI/PriceListButton/PriceListButton';
 import Basket from '../../Basket/Basket';
 
 import "./HeaderBottom.scss";

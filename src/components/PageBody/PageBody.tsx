@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import CatalogGoodCard from '../CatalogGoodCard/CatalogGoodCard';
+import CatalogGoodCard from '../UI/CatalogGoodCard/CatalogGoodCard';
 import goods from "../../data/goods.json";
 
 import "./PageBody.scss";
