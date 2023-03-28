@@ -1,17 +1,16 @@
 import { FC } from 'react';
-import { ICategoryURL, pageCategories, subPageCategories } from '../../../dictionaries/pageCatetories';
+import { ICategoryURL, subPageCategories } from '../../../dictionaries/pageCatetories';
 import { ILocationDict, usePathArray } from '../../../hooks/usePathArray';
-import Footer from '../../common/Footer/Footer';
-import Header from '../../common/Header/Header';
-import PageNavigationPanel from '../../common/PageNavigationPanel/PageNavigationPanel';
-import SiteCategories from '../../common/SiteCategories/SiteCategories';
+import Footer from '../../Footer/Footer';
+import Header from '../../Header/Header';
+import SubCategoryBar from '../../SubCategoryBar/SubCategoryBar';
+import PageNavigationPanel from '../../PageNavigationPanel/PageNavigationPanel';
+import GoodsSorting from '../../GoodsSorting/GoodsSorting';
+import CategorySelectionPanel from '../../CategorySelectionPanel/CategorySelectionPanel';
+import PageBody from '../../PageBody/PageBody';
 
 import "./CatalogPage.scss";
 import "../Page.scss";
-import GoodsSorting from '../../common/GoodsSorting/GoodsSorting';
-import SubCategoryBar from '../../common/SubCategoryBar/SubCategoryBar';
-import CategorySelectionPanel from '../../common/CategorySelectionPanel/CategorySelectionPanel';
-import PageBody from '../../common/PageBody/PageBody';
 
 interface CatalogPageProps {
 
@@ -38,8 +37,8 @@ const CatalogPage: FC<CatalogPageProps> =
                         <div>
                             <SubCategoryBar items={subCategory} />
                             <ul className="CatalogPage__MainContent">
-                                <CategorySelectionPanel />
-                                <PageBody />
+                                <li><CategorySelectionPanel /></li>
+                                <li><PageBody /></li>
                             </ul>
                         </div>
                     }

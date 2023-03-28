@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import Footer from '../../common/Footer/Footer';
-import Header from '../../common/Header/Header';
+import Footer from '../../Footer/Footer';
+import Header from '../../Header/Header';
 
 import "./HomePage.scss";
 

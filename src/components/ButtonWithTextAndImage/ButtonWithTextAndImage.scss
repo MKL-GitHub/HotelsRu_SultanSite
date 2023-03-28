@@ -1,0 +1,18 @@
+.ButtonWithTextAndImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #FFC85E;
+    border-radius: 50px;
+    white-space: nowrap;
+    width: 192px;
+    height: 59px;
+    cursor: pointer;
+    z-index: 1;
+
+    & span {
+        color: white;
+        font-weight: 700;
+    }
+}

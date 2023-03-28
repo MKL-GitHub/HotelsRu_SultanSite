@@ -1,0 +1,59 @@
+.GoodParamFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &__Title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #111111;
+    }
+
+    &__Search {
+        width: 238px;
+    }
+
+    &__CheckBoxList {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__CheckBoxItem {
+        display: flex;
+        color: #3F4E65;
+        line-height: 150%;
+
+        &>label {
+            padding-left: 10px;
+
+            &>span {
+                font-size: 10px;
+                line-height: 150%;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    &__ShowAllBtnContainer {
+        display: flex;
+        gap: 5px;
+
+        & > :last-child {
+            position: relative;
+            top: -3px;
+            align-self: flex-end;
+        }
+
+        &[data-is-opened = true] {
+            & > :last-child {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__ShowAllBtn {
+        background-color: transparent;
+    }
+}
