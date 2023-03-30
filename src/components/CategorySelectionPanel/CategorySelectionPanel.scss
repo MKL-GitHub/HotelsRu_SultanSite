@@ -1,5 +1,4 @@
 .CategorySelectionPanel {
-    // background-color: #597a4a0d;
     width: 238px;
 
     &__Title {
@@ -31,10 +30,38 @@
     }
 
     &__ShowHideBtns {
-        background-color: blue;
+        display: flex;
+        gap: 10px;
+        padding-top: 25px;
+        padding-bottom: 20px;
     }
 
-    &__SubCategoriesList {
-        // background-color: red;
+    &__ShowBtn {
+        width: 169px;
+    }
+}
+
+.SubCategoriesList {
+    padding-top: 20px;
+
+    & li {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #111111;
+
+        & * {
+            cursor: pointer;
+        }
+
+        & label {
+            display: flex;
+        }
+
+        & span {
+            display: block;
+            padding-left: 10px;
+        }
     }
 }

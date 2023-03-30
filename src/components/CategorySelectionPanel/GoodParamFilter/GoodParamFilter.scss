@@ -25,13 +25,20 @@
         color: #3F4E65;
         line-height: 150%;
 
-        &>label {
-            padding-left: 10px;
+        & * {
+            cursor: pointer;
+        }
+        & label {
+            display: flex;
+            gap: 10px;
 
-            &>span {
-                font-size: 10px;
-                line-height: 150%;
-                padding-left: 5px;
+            & ul {
+                display: flex;
+                gap: 5px;
+            }
+
+            &:hover {
+                color: black;
             }
         }
     }

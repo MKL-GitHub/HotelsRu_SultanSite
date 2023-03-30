@@ -8,7 +8,7 @@ export interface ISubCategoryURL {
     [key: string]: ICategoryURL;
 }
 
-export const pageCategories: ICategoryURL = {
+export const goodCategories: ICategoryURL = {
     "household-chemicals": "Бытовая химия",
     "cosmetics-and-hygiene": "Косметика и гигиена",
     "household-products": "Товары для дома",
@@ -16,6 +16,6 @@ export const pageCategories: ICategoryURL = {
     "dishes": "Посуда",
 };
 
-export const subPageCategories: ISubCategoryURL = {
+export const goodSubCategories: ISubCategoryURL = {
     "cosmetics-and-hygiene": cosmeticsAndHygiene,
 }

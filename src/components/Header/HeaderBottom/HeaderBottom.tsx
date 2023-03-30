@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import ButtonWithTextAndImage from '../../UI/ButtonWithTextAndImage/ButtonWithTextAndImage';
-import InputWithButtonAndImage from '../../UI/InputWithButtonAndImage/InputWithButtonAndImage';
+import Button from '../../UI/Button/Button';
+import InputWithButtonAndImage from '../../UI/InputWithButton/InputWithButton';
 import ContactInfoCall from '../../UI/ContactInfoCall/ContactInfoCall';
 import PriceListButton from '../../UI/PriceListButton/PriceListButton';
 import Basket from '../../Basket/Basket';
@@ -20,7 +20,7 @@ const HeaderBottom: FC<HeaderBottomProps> = () => {
     return (
         <section className="HeaderBottom">
             <img src={logoImg} alt="Логотип" />
-            <ButtonWithTextAndImage text="Каталог" image={fourRectsImg} />
+            <Button text="Каталог" image={fourRectsImg} />
             <InputWithButtonAndImage />
             <div className="HeaderBottom__Right">
                 <div className="HeaderBottom__CallOrder">

@@ -1,26 +1,40 @@
 import { FC } from 'react';
+import IGoodsFilter from '../../../interfaces/IGoodsFilter';
+import NumberInput from '../../UI/NumberInput/NumberInput';
 
 import "./PriceFilter.scss";
 
 interface PriceFilterProps {
-
+    goodsFilter: IGoodsFilter;
+    setGoodsFilter: React.Dispatch<React.SetStateAction<IGoodsFilter>>;
 }
 
-const PriceFilter: FC<PriceFilterProps> = () => {
-    return (
-        <ul className="PriceFilter">
-            <li className="PriceFilter__Title">
-                <span>Цена</span><span>₸</span>
-            </li>
-            <li>
-                <ul className="PriceFilter__Inputs">
-                    <li><input type="number" defaultValue={0}/></li>
-                    <li>-</li>
-                    <li><input type="text" defaultValue={10000}/></li>
-                </ul>
-            </li>
-        </ul>
-    );
-}
+const PriceFilter: FC<PriceFilterProps> =
+    ({ goodsFilter, setGoodsFilter }) => {
+        const handlePriceOnChange = (prop: "priceTo" | "priceFrom", value: string | undefined) => {
+            setGoodsFilter({ ...goodsFilter, [prop]: value });
+        }
+
+        return (
+            <ul className="PriceFilter">
+                <li className="PriceFilter__Title">
+                    <span>Цена</span><span>₸</span>
+                </li>
+                <li>
+                    <ul className="PriceFilter__Inputs">
+                        <li><NumberInput
+                            value={goodsFilter.priceFrom}
+                            onChange={(value) => handlePriceOnChange("priceFrom", value)}
+                        /></li>
+                        <li>-</li>
+                        <li><NumberInput
+                            value={goodsFilter.priceTo}
+                            onChange={(value) => handlePriceOnChange("priceTo", value)}
+                        /></li>
+                    </ul>
+                </li>
+            </ul>
+        );
+    }
 
 export default PriceFilter;

@@ -1,10 +1,8 @@
 import { FC, ReactElement } from 'react';
 import { Navigate } from "react-router-dom";
-import NotFoundPage from "../components/pages/NotFoundPage/NotFoundPage";
-import ProductCard from "../components/pages/ProductCard/ProductCard";
-import ProductsBasket from "../components/pages/ProductsBasket/ProductsBasket";
-import CatalogPage from "../components/pages/CatalogPage/CatalogPage";
-import HomePage from '../components/pages/HomePage/HomePage';
+import CatalogPage from '../pages/CatalogPage/CatalogPage';
+import HomePage from '../pages/HomePage/HomePage';
+import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
 
 interface routesProps {
     path: string;

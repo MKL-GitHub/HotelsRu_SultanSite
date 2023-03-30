@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import ButtonWithTextAndImage from '../ButtonWithTextAndImage/ButtonWithTextAndImage';
+import Button from '../Button/Button';
 import IGood from '../../../data/IGood';
 
 import "./CatalogGoodCard.scss";
@@ -45,7 +45,7 @@ const CatalogGoodCard: FC<CatalogGoodCardProps> = ({ good }) => {
             </li>
             <li className="CatalogGoodCard__PriceAndButton">
                 <span className="CatalogGoodCard__Price">{good.price}</span>
-                <ButtonWithTextAndImage className="CatalogGoodCard__ToBasketBtn" text="В корзину" image={groceryСartImg} />
+                <Button className="CatalogGoodCard__ToBasketBtn" text="В корзину" image={groceryСartImg} />
             </li>
         </ul>
     );

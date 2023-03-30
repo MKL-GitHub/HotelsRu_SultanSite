@@ -1,58 +1,82 @@
-import { FC, useState } from 'react';
-import InputWithButtonAndImage from '../../UI/InputWithButtonAndImage/InputWithButtonAndImage';
+import { ChangeEvent, MouseEvent, FC, useState } from 'react';
+import InputWithButton from '../../UI/InputWithButton/InputWithButton';
 
 import "./GoodParamFilter.scss";
 
 import triangleImg from "../../../svg/triangle.svg";
+import Checkbox from '../../UI/Checkbox/Checkbox';
 
 interface GoodParamFilterProps {
     title: string;
-    items: string[];
+    items: { [key: string]: boolean };
+    onItemChange: (item: string, checked: boolean) => void;
+    countedItems: { [key: string]: number };
 }
 
 const GoodParamFilter: FC<GoodParamFilterProps> =
-    ({ title, items }) => {
-        const allItems = Array.from(new Set<string>(items)).sort((a, b) => a.localeCompare(b));
-        const firstFourItems = allItems.slice(0, 4);
+    ({ title, items, onItemChange, countedItems }) => {
+        const allItems: string[] = Object.keys(items).sort((a, b) => a.localeCompare(b));
+        const firstFourItems: string[] = allItems.slice(0, 4);
 
+        const [itemsState, setItemsState] = useState<string[]>(firstFourItems)
         const [buttonText, setButtonText] = useState<string>("Показать все");
-        const [isOpenedList, setIsOpenedList] = useState(false);
-        const [uniqueItems, setUniqueItems] = useState<string[]>(firstFourItems);
-
-        function getItemQuantity(item: string): number {
-            return items.filter(i => i === item).length;
-        }
+        const [isOpenedList, setIsOpenedList] = useState<boolean>(false);
+        const [searchValue, setSearchValue] = useState<string>("");
 
         function handleButtonClick() {
             if (buttonText === "Показать все") {
                 setButtonText("Скрыть");
                 setIsOpenedList(true);
-                setUniqueItems(allItems);
+                setItemsState(allItems);
+                setSearchValue("");
             }
             else {
                 setButtonText("Показать все");
                 setIsOpenedList(false);
-                setUniqueItems(firstFourItems);
+                setItemsState(firstFourItems);
             }
+        }
+
+        const handleParamOnChange = (item: string, checked: boolean) => {
+            onItemChange(item, checked);
+        }
+
+        const handleInputOnChange = (event: ChangeEvent<HTMLInputElement>) => {
+            setSearchValue(event.target.value);
+        }
+
+        const handleInputOnButtonClick = () => {
+            setIsOpenedList(false);
+            setButtonText("Показать все");
+            setItemsState(allItems.filter(item =>
+                item.toLowerCase().substring(0, searchValue.length) === searchValue.toLowerCase()
+            ).slice(0, 4));
         }
 
         return (
             <ul className="GoodParamFilter">
                 <li className="GoodParamFilter__Title">{title}</li>
-                <li><InputWithButtonAndImage className="GoodParamFilter__Search" /></li>
-                <li className="GoodParamFilter__CheckBoxList">
-                    {uniqueItems.map((item, index) =>
-                        <div key={index} className="GoodParamFilter__CheckBoxItem">
-                            <input id={item + index} type="checkbox" />
-                            <label htmlFor={item + index}>
-                                {item}
-                                <span>
-                                    {"(" + getItemQuantity(item) + ")"}
-                                </span>
-                            </label>
-                        </div>
-                    )}
-                </li>
+                <li><InputWithButton
+                    className="GoodParamFilter__Search"
+                    value={searchValue}
+                    onChange={handleInputOnChange}
+                    onButtonClick={handleInputOnButtonClick}
+                /></li>
+                <li><ul className="GoodParamFilter__CheckBoxList">
+                    {
+                        itemsState.map((item, index) =>
+                            <li key={index} className="GoodParamFilter__CheckBoxItem">
+                                <Checkbox
+                                    checked={items[item]}
+                                    onChange={(checked) => { handleParamOnChange(item, checked) }}
+                                    label={<ul>
+                                        <li>{item}</li>
+                                        <li>{"(" + countedItems[item] + ")"}</li>
+                                    </ul>}
+                                />
+                            </li>)
+                    }
+                </ul></li>
                 <li
                     className="GoodParamFilter__ShowAllBtnContainer"
                     data-is-opened={isOpenedList}

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import InputWithButtonAndImage from '../../UI/InputWithButtonAndImage/InputWithButtonAndImage';
+import InputWithButtonAndImage from '../../UI/InputWithButton/InputWithButton';
 
 import "./FooterCompanyProfile.scss";
 

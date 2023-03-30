@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import ButtonWithTextAndImage from '../ButtonWithTextAndImage/ButtonWithTextAndImage';
+import Button from '../Button/Button';
 
 import "./PriceListButton.scss";
 
@@ -11,7 +11,7 @@ interface PriceListButtonProps {
 
 const PriceListButton: FC<PriceListButtonProps> = () => {
     return (
-        <ButtonWithTextAndImage text="Прайс-лист" image={downArrow} />
+        <Button text="Прайс-лист" image={downArrow} />
     );
 }
 
