@@ -3,10 +3,10 @@ import { FC } from 'react';
 import "./Button.scss";
 
 interface ButtonProps {
-    text?: string;
+    text?: string | number;
     image?: string;
     className?: string;
-    onClick?: any;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const Button: FC<ButtonProps> =

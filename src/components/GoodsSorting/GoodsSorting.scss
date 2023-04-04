@@ -2,33 +2,55 @@
     display: flex;
     gap: 5px;
 
-    & li:last-child {
-        position: relative;
-        display: flex;
-        top: -7px;
-        align-self: flex-end;
+    &__Title {
+        font-weight: 500;
+        color: #111111;
+    }
+
+    &__SelectParam {
+        font-size: 16px;
+        line-height: 150%;
+
+        select {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            text-indent: 0.01px;
+            text-overflow: '';
+            border: none;
+            background: transparent;
+            color: #3F4E65;
+            cursor: pointer;
+        }
+    }
+
+    &__Order {
+
+        &:hover {
+            box-shadow: 0 0 2px #2716169b;
+            border-radius: 3px;
+        }
+        
+        &>button {
+            width: 20px;
+            height: 100%;
+
+            &>img {
+                position: relative;
+                top: 7px;
+            }
+        }
+
+        &[data-is-asc-order = true] {
+            &>button>img {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     & li,
     & select {
         font-size: 16px;
         line-height: 150%;
-    }
-
-    & li select {
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        text-indent: 0.01px;
-        text-overflow: '';
-        border: none;
-        background: transparent;
-        color: #3F4E65;
-        cursor: pointer;
-    }
-
-    &__Title {
-        font-weight: 500;
-        color: #111111;
     }
 }

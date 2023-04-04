@@ -1,0 +1,73 @@
+.CartGood {
+    display: flex;
+
+    &__LeftLI {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &>div {
+            display: flex;
+            justify-content: center;
+            width: 281px;
+        }
+    }
+
+    &__GoodBody {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 500px;
+    }
+
+    &__GoodSize {
+        &>img {
+            padding-right: 8px;
+        }
+
+        &>span {
+            font-size: 12px;
+            line-height: 130%;
+            color: #3F4E65;
+        }
+    }
+
+    &__NameDescription {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #111111;
+    }
+
+    &__Content {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 150%;
+        color: #3F4E65;
+        max-width: 444px;
+    }
+
+    &__RightLI {
+        display: flex;
+
+        &>ul {
+            display: flex;
+            align-items: center;
+            gap: 86px;
+
+            &>li:not(:last-child)::before {
+                top: 50%;
+                transform: translateY(-50%);
+                right: -43px;
+                height: 49px;
+                opacity: 0.1;
+            }
+        }
+    }
+
+    &__Price {
+        font-weight: 700;
+        font-size: 30px;
+        color: #111111;
+    }
+}

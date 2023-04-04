@@ -8,12 +8,23 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-
     }
 
     &__MainContent {
         display: flex;
-        // justify-content: space-between;
-        gap: 108px;
+        gap: 50px;
+    }
+
+    &__Body {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__BottomText {
+        width: 85%;
+        // margin: 68px 0;
+        line-height: 150%;
+        color: #3F4E65;
     }
 }

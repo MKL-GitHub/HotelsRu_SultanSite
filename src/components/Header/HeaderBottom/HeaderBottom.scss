@@ -1,13 +1,30 @@
 .HeaderBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    height: 110px;
 
-    &__Right {
+    &>ul,
+    &>ul>li {
         display: flex;
         align-items: center;
+    }
+
+    &>ul {
+        justify-content: space-between;
+        gap: 20px;
+        height: 110px;
+    }
+
+    &__Left {
+        gap: 15px;
+
+        &>:nth-child(1) {
+            margin-right: 23px;
+        }
+        &>:nth-child(2) {
+            width: 192px;
+            height: 59px;
+        }
+    }
+
+    &__Right {
         gap: 50px;
 
         &>*:not(:last-child) {
@@ -26,10 +43,60 @@
         }
     }
 
+    &__Catalog {
+        width: 192px;
+        height: 59px;
+    }
+
     &__CallOrder {
         display: flex;
         align-items: center;
         gap: 10px;
         white-space: nowrap;
+    }
+
+    &__PriceListBtn {
+        width: 200px;
+        height: 59px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .HeaderBottom {
+        &>ul {
+            &>li {
+                // background-color: blue;
+                // width: 10rem
+
+            }
+        }
+
+        &__Left {
+            &>:nth-child(1) {
+                // height: 59.4px;
+                height: 62.7px;
+            }
+
+            &>:nth-child(2) {
+                // width: 172.8px;
+                // height: 53.1px;
+                width: 182.4px;
+                height: 56.05px;
+            }
+
+            &>:nth-child(3) {
+                // width: 236.7px;
+                // height: 53.1px;
+                width: 249.85px;
+                height: 56.05px;
+            }
+        }
+
+        &__Right {
+            &>:nth-child(2) {
+                width: 182.4px;
+                height: 56.05px;
+            }
+        }
     }
 }

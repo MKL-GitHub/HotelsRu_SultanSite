@@ -1,0 +1,13 @@
+.DropDown {
+    display: flex;
+    flex-direction: column;
+
+    &>li:first-child {
+        display: flex;
+        gap: 5px;
+
+        &>img[data-is-opened=true] {
+            transform: rotate(180deg);
+        }
+    }
+}

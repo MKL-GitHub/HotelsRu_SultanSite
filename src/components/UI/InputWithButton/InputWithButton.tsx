@@ -24,7 +24,7 @@ const InputWithButtonAndImage: FC<InputWithButtonAndImageProps> =
                     value={props.value}
                     onChange={props.onChange}
                 />
-                <Button image={image} onClick={props.onButtonClick} />
+                <Button image={image} onClick={props.onButtonClick} className="OrangeButton" />
             </div>
         );
     }

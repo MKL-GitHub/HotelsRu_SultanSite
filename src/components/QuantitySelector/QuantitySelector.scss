@@ -1,0 +1,27 @@
+.QuantitySelector {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+
+    &>li:first-child>button,
+    &>li:last-child>button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 23px;
+        font-weight: 300;
+        font-size: 12px;
+        color: #3F4E65;
+        border-radius: 30px;
+        user-select: none;
+
+        background: linear-gradient(90deg, #ffc6504d 0%, #feca6e4d 97.25%);
+    }
+
+    &>li:nth-child(2) {
+        font-weight: 500;
+        color: #3F4E65;
+    }
+}

@@ -22,7 +22,7 @@ const NumberInput: FC<NumberInputProps> =
         return (
             <input
                 type="number"
-                value={value}
+                defaultValue={value}
                 onChange={handleOnChange}
             />
         );

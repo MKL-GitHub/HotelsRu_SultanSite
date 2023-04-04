@@ -1,0 +1,23 @@
+.OrangeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #FFC85E;
+    border-radius: 50px;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 1;
+
+    & span {
+        color: white;
+        font-weight: 700;
+    }
+
+    &:hover {
+        background-color: #ffb728;
+    }
+    &:active {
+        background-color: #ffaa00;
+    }
+}

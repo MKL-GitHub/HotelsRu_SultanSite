@@ -6,12 +6,15 @@ import "./PriceListButton.scss";
 import downArrow from "./svg/down_arrow.svg";
 
 interface PriceListButtonProps {
-
+    className?: string;
 }
 
-const PriceListButton: FC<PriceListButtonProps> = () => {
+const PriceListButton: FC<PriceListButtonProps> = ({ className }) => {
     return (
-        <Button text="Прайс-лист" image={downArrow} />
+        <Button
+            text="Прайс-лист"
+            image={downArrow}
+            className={"PriceListButton " + className} />
     );
 }
 

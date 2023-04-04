@@ -1,0 +1,14 @@
+.DashedUL {
+    display: flex;
+    
+    &>li:not(:last-child) {
+        position: relative;
+    }
+
+    &>li:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        opacity: 0.1;
+        border: 1px dashed #3F4E65;
+    }
+}

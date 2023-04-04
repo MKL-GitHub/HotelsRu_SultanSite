@@ -34,7 +34,7 @@ const Footer: FC<FooterProps> = () => {
                 <li>
                     <div className="Footer__Title">Скачать прайс-лист:</div>
                     <ul className="Footer__List" >
-                        <PriceListButton />
+                        <PriceListButton className="OrangeButton Footer__PriceListBtn" />
                         <li>Связь в мессенджерах:</li>
                         <ul className="Footer__SocialNetworks">
                             <li><img src={whatsappImg} alt="WhatsApp" /></li>

@@ -2,8 +2,13 @@
     display: flex;
     gap: 40px;
 
-    & li {
+    &>li {
         display: flex;
         gap: 17px;
+
+        &:not(:last-child)::before {
+            height: 39px;
+            right: -20px;
+        }
     }
 }

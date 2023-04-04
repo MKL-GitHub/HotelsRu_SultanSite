@@ -11,7 +11,7 @@ interface BasketButtonProps {
 
 const BasketButton: FC<BasketButtonProps> = ({ onClick }) => {
     return (
-        <Button image={basketImg} className="BasketButton" onClick={onClick} />
+        <Button image={basketImg} className="OrangeButton BasketButton" onClick={onClick} />
     );
 }
 

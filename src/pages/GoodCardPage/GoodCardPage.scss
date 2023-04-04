@@ -1,0 +1,199 @@
+.GoodCardPage {
+
+    &__Main {}
+
+    &__Good {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 65px;
+
+        &>li {
+            flex-basis: calc(50% - 25px);
+            min-height: 100px;
+            box-sizing: border-box;
+        }
+
+        &>li:first-child {
+            display: flex;
+            justify-content: center;
+
+            &>img {
+                width: fit-content;
+                height: fit-content;
+                padding: 10px;
+            }
+        }
+    }
+
+    &__Body {
+        padding-top: 35px;
+    }
+
+    &__InStock {
+        font-weight: 500;
+        line-height: 130%;
+        color: #1FD85D;
+    }
+
+    &__Title {
+        font-size: 30px;
+        line-height: 150%;
+        color: #111111;
+        padding: 10px 0;
+
+        &>span:first-child {
+            font-weight: 800;
+            padding-right: 8px;
+        }
+    }
+
+    &__Size {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    &__ToCartBtn {
+        width: 184px;
+        height: 59px;
+    }
+
+    &__PriceQuantity {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 20px;
+
+        &>:first-child {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 130%;
+            color: #111111;
+        }
+    }
+
+    &__WhiteBtns {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 35px;
+
+        &>li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 77px;
+            box-shadow: 0px 15px 70px -3px #2b1c010b;
+            border-radius: 10px;
+
+            &:not(:nth-child(2)):hover {
+                box-shadow: 0px 0px 10px #2b1c0127;
+
+                &>button {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &:nth-child(1) {
+                width: 77px;
+            }
+
+            &:nth-child(2) {
+                width: 316px;
+                font-size: 12px;
+                line-height: 150%;
+                text-align: center;
+                color: #3F4E65;
+
+                &>div {
+                    width: 245px;
+                    height: 36px;
+
+                    &>span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                width: 186px;
+            }
+        }
+    }
+
+    &__PriceListBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        color: white;
+        filter: brightness(0) saturate(100%) invert(27%) sepia(34%) saturate(473%) hue-rotate(176deg) brightness(93%) contrast(87%);
+    }
+
+    &__Info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 30px;
+
+        &>li {
+            display: flex;
+            gap: 5px;
+
+            &>span {
+                line-height: 150%;
+
+                &:first-child {
+                    font-weight: 300;
+                    color: #3F4E65;
+                }
+
+                &:last-child {
+                    font-weight: 500;
+                    color: #111111;
+                }
+            }
+
+
+        }
+    }
+
+    &__DropDown {
+        gap: 15px;
+
+        &>li {
+            &:first-child>button {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: #111111;
+            }
+        }
+
+        &_SmallContent {
+            &>li {
+                &:last-child {
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color: #3F4E65;
+                    max-width: 611px;
+                }
+            }
+        }
+    }
+
+    &__DashedUL {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 100px;
+
+        &>li:not(:last-child)::before {
+            top: calc(100% + 20px);
+            transform: translateY(-50%);
+            width: 269.5px;
+            opacity: 0.2;
+        }
+    }
+}

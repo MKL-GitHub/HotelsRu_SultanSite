@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import useLinkListCreator from '../../hooks/useLinkListCreator';
 import { ILocationDict } from '../../hooks/usePathArray';
+import { Link } from 'react-router-dom';
 
 import "./PageNavigationPanel.scss";
 
@@ -9,11 +9,26 @@ interface PageNavigationPanelProps {
 }
 
 const PageNavigationPanel: FC<PageNavigationPanelProps> = ({ items }) => {
-    const lis: JSX.Element[] = useLinkListCreator(items);
+    const lastIndex = Object.keys(items).length - 1;
+
+    const handleOnClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, index: number): void => {
+        if (index === lastIndex) {
+            event.preventDefault();
+        }
+    }
 
     return (
         <ul className="PageNavigationPanel">
-            {lis}
+            {Object.keys(items).map((item, index) => (
+                <li key={index}>
+                    <Link
+                        to={item === "/" ? "/" : "/" + item}
+                        onClick={(e) => handleOnClick(e, index)}
+                    >
+                        {items[item]}
+                    </Link>
+                </li>
+            ))}
         </ul>
     );
 }

@@ -3,6 +3,7 @@ import ContactInfoLocation from '../../UI/ContactInfoLocation/ContactInfoLocatio
 import ContactInfoMail from '../../UI/ContactInfoMail/ContactInfoMail';
 
 import "./HeaderTopContactInfo.scss";
+import "../../../styles/styles.scss";
 
 import locationImg from "./svg/location.svg";
 import mailImg from "./svg/mail.svg";
@@ -13,7 +14,7 @@ interface HeaderTopContactInfoProps {
 
 const HeaderTopContactInfo: FC<HeaderTopContactInfoProps> = () => {
     return (
-        <ul className="HeaderTopContactInfo">
+        <ul className="HeaderTopContactInfo DashedUL">
             <li>
                 <img src={locationImg} alt="Расположение" />
                 <ContactInfoLocation />

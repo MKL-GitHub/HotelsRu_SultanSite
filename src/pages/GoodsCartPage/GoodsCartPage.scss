@@ -1,0 +1,52 @@
+.GoodsCartPage {
+    &__Title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #111111;
+    }
+
+    &__UL {
+        flex-direction: column;
+        gap: 100px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+        &>li:not(:last-child)::before {
+            bottom: -50px;
+            width: 100%;
+            opacity: 0.2;
+        }
+    }
+
+    &__LI {
+
+        &>ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__LastRow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__PlaceOrderBtn {
+        width: 192px;
+        height: 59px;
+    }
+
+    &__OrderPrice {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+        color: #111111;
+    }
+
+    &__OrderCompleted {
+        font-size: 30px;
+        text-align: center;
+    }
+}

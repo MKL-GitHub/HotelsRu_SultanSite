@@ -1,0 +1,69 @@
+.Pagination {
+    display: flex;
+    gap: 9px;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 23px 0;
+
+    &>li {
+        position: relative;
+        border-radius: 50%;
+
+        &>button {
+            width: 20px;
+            height: 20px;
+        }
+
+        &[data-current-page=false]:hover {
+            color: black;
+            box-shadow: 0px 1px 1px #00000034;
+        }
+
+        &[data-current-page=true] {
+            &>button {
+                cursor: auto;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 35px;
+                height: 35px;
+                z-index: -10;
+                border-radius: 50%;
+                background: linear-gradient(90deg, #ffc6504d 0%, #feca6e4d 97.25%);
+            }
+        }
+    }
+
+    &__Back,
+    &__Forth {
+        &:hover {
+            & img {
+                filter: saturate(1000%)
+            }
+        }
+    }
+
+    &__Back {
+        margin-right: 20px;
+
+        & img {
+            position: relative;
+            left: -0.5px;
+        }
+    }
+
+    &__Forth {
+        margin-left: 20px;
+
+        & img {
+            position: relative;
+            left: 0.5px;
+            transform: rotate(180deg);
+        }
+    }
+}
