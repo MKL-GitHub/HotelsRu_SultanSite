@@ -8,7 +8,7 @@ import SubCategoryBar from '../../components/SubCategoryBar/SubCategoryBar';
 import GoodsFilterPanel from '../../components/GoodsFilterPanel/GoodsFilterPanel';
 import GoodCardList from '../../components/GoodCardList/GoodCardList';
 import Footer from '../../components/Footer/Footer';
-import IGood from '../../data/IGood';
+import IGood from '../../interfaces/IGood';
 import IGoodsFilter from '../../interfaces/IGoodsFilter';
 import createCheckboxStates from '../../services/createCheckboxStates';
 import createCountedItems from '../../services/createCountedItems';
@@ -53,7 +53,12 @@ const CatalogPage: FC<CatalogPageProps> =
         }, [goodsData]);
 
         useEffect(() => {
-            setCareGoodsTypes(createCareGoodsTypes(allGoodsList));
+            const careGoodsTypesData = localStorage.getItem("careGoodsTypes");
+
+            if (careGoodsTypesData) {
+                setCareGoodsTypes(JSON.parse(careGoodsTypesData));
+            }
+
             setGoodsList(getGoodsSortedByParam(allGoodsList));
             setIsDataLoaded(true);
         }, [allGoodsList]);

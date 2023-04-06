@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 import "./Button.scss";
 
@@ -7,10 +7,11 @@ interface ButtonProps {
     image?: string;
     className?: string;
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    children?: ReactNode;
 }
 
 const Button: FC<ButtonProps> =
-    ({ text, image, className, onClick }) => {
+    ({ text, image, className, onClick, children }) => {
         return (
             <button
                 className={"Button " + className}
@@ -18,6 +19,7 @@ const Button: FC<ButtonProps> =
             >
                 {text && <span>{text}</span>}
                 {image && <img src={image} />}
+                {children}
             </button>
         );
     }

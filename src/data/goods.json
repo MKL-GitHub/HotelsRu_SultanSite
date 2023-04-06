@@ -8,7 +8,7 @@
         "manufacturer": "Нэфис",
         "brand": "Method",
         "description": "средство для мытья посуды Crystal",
-        "price": "48.76 ₸"
+        "price": "48.76"
     },
     {
         "image_url": "ariel_1.png",
@@ -19,7 +19,7 @@
         "manufacturer": "Нэфис",
         "brand": "Method",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "272 ₸"
+        "price": "272"
     },
     {
         "image_url": "bimax_1.png",
@@ -30,7 +30,7 @@
         "manufacturer": "Нэфис",
         "brand": "BIOMAX",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "420 ₸"
+        "price": "420"
     },
     {
         "image_url": "aos_1.png",
@@ -41,7 +41,7 @@
         "manufacturer": "Нэфис",
         "brand": "Method",
         "description": "средство для мытья посуды Crystal",
-        "price": "561 ₸"
+        "price": "561"
     },
     {
         "image_url": "ariel_1.png",
@@ -52,7 +52,7 @@
         "manufacturer": "Нэфис",
         "brand": "Method",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "643 ₸"
+        "price": "643"
     },
     {
         "image_url": "bimax_1.png",
@@ -63,7 +63,7 @@
         "manufacturer": "Нэфис",
         "brand": "BIOMAX",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "723 ₸"
+        "price": "723"
     },
     {
         "image_url": "aos_1.png",
@@ -74,7 +74,7 @@
         "manufacturer": "Нэфис",
         "brand": "Method",
         "description": "средство для мытья посуды Crystal",
-        "price": "232 ₸"
+        "price": "232"
     },
     {
         "image_url": "ariel_1.png",
@@ -85,7 +85,7 @@
         "manufacturer": "Нэфис",
         "brand": "Method",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "399.89 ₸"
+        "price": "399.89"
     },
     {
         "image_url": "bimax_1.png",
@@ -96,7 +96,7 @@
         "manufacturer": "Grifon",
         "brand": "BIOMAX",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "129 ₸"
+        "price": "129"
     },
     {
         "image_url": "aos_1.png",
@@ -107,7 +107,7 @@
         "manufacturer": "Grifon",
         "brand": "Dr. Bronner's",
         "description": "средство для мытья посуды Crystal",
-        "price": "564 ₸"
+        "price": "564"
     },
     {
         "image_url": "ariel_1.png",
@@ -118,7 +118,7 @@
         "manufacturer": "Grifon",
         "brand": "AOS",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "193 ₸"
+        "price": "193"
     },
     {
         "image_url": "bimax_1.png",
@@ -129,7 +129,7 @@
         "manufacturer": "Grifon",
         "brand": "BIOMAX",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "321 ₸"
+        "price": "321"
     },
     {
         "image_url": "aos_1.png",
@@ -140,7 +140,7 @@
         "manufacturer": "Paclan",
         "brand": "AOS",
         "description": "средство для мытья посуды Crystal",
-        "price": "174 ₸"
+        "price": "174"
     },
     {
         "image_url": "ariel_1.png",
@@ -151,7 +151,7 @@
         "manufacturer": "Paclan",
         "brand": "AOS",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "583 ₸"
+        "price": "583"
     },
     {
         "image_url": "bimax_1.png",
@@ -162,73 +162,73 @@
         "manufacturer": "Paclan",
         "brand": "Dr. Bronner's",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "765 ₸"
+        "price": "765"
     },
     {
         "image_url": "aos_1.png",
         "name": "AOS",
         "size_type": "объем",
         "size": "450 мл",
-        "barcode": "4554049097548",
+        "barcode": "4554957397548",
         "manufacturer": "Paclan",
         "brand": "Dr. Bronner's",
         "description": "средство для мытья посуды Crystal",
-        "price": "389.18 ₸"
+        "price": "389.18"
     },
     {
         "image_url": "ariel_1.png",
         "name": "ARIEL",
         "size_type": "вес",
         "size": "15X28.8 г",
-        "barcode": "5554049097549",
+        "barcode": "5554033397549",
         "manufacturer": "Paclan",
         "brand": "Dr. Bronner's",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "325.98 ₸"
+        "price": "325.98"
     },
     {
         "image_url": "bimax_1.png",
         "name": "BIOMAX",
         "size_type": "вес",
         "size": "1500 г",
-        "barcode": "3424049097511",
+        "barcode": "3424049886611",
         "manufacturer": "Paclan",
         "brand": "Attitude",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "800 ₸"
+        "price": "800"
     },
     {
         "image_url": "aos_1.png",
         "name": "AOS",
         "size_type": "объем",
         "size": "450 мл",
-        "barcode": "1604049123548",
+        "barcode": "1607777123548",
         "manufacturer": "Булгари Грин",
         "brand": "Attitude",
         "description": "средство для мытья посуды Crystal",
-        "price": "298 ₸"
+        "price": "298"
     },
     {
         "image_url": "ariel_1.png",
         "name": "ARIEL",
         "size_type": "вес",
         "size": "15X28.8 г",
-        "barcode": "1204049097512",
+        "barcode": "1204066097512",
         "manufacturer": "Булгари Грин",
         "brand": "Attitude",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "198 ₸"
+        "price": "198"
     },
     {
         "image_url": "bimax_1.png",
         "name": "BIOMAX",
         "size_type": "вес",
         "size": "1500 г",
-        "barcode": "2304049097523",
+        "barcode": "2304022007523",
         "manufacturer": "Булгари Грин",
         "brand": "Attitude",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "250 ₸"
+        "price": "250"
     },
     {
         "image_url": "aos_1.png",
@@ -239,18 +239,18 @@
         "manufacturer": "Булгари Грин",
         "brand": "Ecover",
         "description": "средство для мытья посуды Crystal",
-        "price": "428.76 ₸"
+        "price": "428.76"
     },
     {
         "image_url": "ariel_1.png",
         "name": "ARIEL",
         "size_type": "вес",
         "size": "15X28.8 г",
-        "barcode": "3504049097535",
+        "barcode": "3504049111535",
         "manufacturer": "Булгари Грин",
         "brand": "Ecover",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "248.76 ₸"
+        "price": "248.76"
     },
     {
         "image_url": "bimax_1.png",
@@ -261,84 +261,84 @@
         "manufacturer": "Paclan",
         "brand": "Mrs. Meyer's",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "300 ₸"
+        "price": "300"
     },
     {
         "image_url": "aos_1.png",
         "name": "AOS",
         "size_type": "объем",
         "size": "450 мл",
-        "barcode": "4554049097548",
+        "barcode": "4554045836948",
         "manufacturer": "Paclan",
         "brand": "Mrs. Meyer's",
         "description": "средство для мытья посуды Crystal",
-        "price": "389.18 ₸"
+        "price": "389.18"
     },
     {
         "image_url": "ariel_1.png",
         "name": "ARIEL",
         "size_type": "вес",
         "size": "15X28.8 г",
-        "barcode": "5554049097549",
+        "barcode": "5558823097549",
         "manufacturer": "Paclan",
         "brand": "Mrs. Meyer's",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "325.98 ₸"
+        "price": "325.98"
     },
     {
         "image_url": "bimax_1.png",
         "name": "BIOMAX",
         "size_type": "вес",
         "size": "1500 г",
-        "barcode": "3424049097511",
+        "barcode": "3424048897511",
         "manufacturer": "Paclan",
         "brand": "Mrs. Meyer's",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "800 ₸"
+        "price": "800"
     },
     {
         "image_url": "aos_1.png",
         "name": "AOS",
         "size_type": "объем",
         "size": "450 мл",
-        "barcode": "1604049123548",
+        "barcode": "1773349123548",
         "manufacturer": "Булгари Грин",
         "brand": "Mrs. Meyer's",
         "description": "средство для мытья посуды Crystal",
-        "price": "298 ₸"
+        "price": "298"
     },
     {
         "image_url": "ariel_1.png",
         "name": "ARIEL",
         "size_type": "вес",
         "size": "15X28.8 г",
-        "barcode": "1204049097512",
+        "barcode": "1994049097512",
         "manufacturer": "Булгари Грин",
         "brand": "Mrs. Meyer's",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "198 ₸"
+        "price": "198"
     },
     {
         "image_url": "bimax_1.png",
         "name": "BIOMAX",
         "size_type": "вес",
         "size": "1500 г",
-        "barcode": "2304049097523",
+        "barcode": "2999049097523",
         "manufacturer": "Булгари Грин",
         "brand": "Attitude",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "250 ₸"
+        "price": "250"
     },
     {
         "image_url": "aos_1.png",
         "name": "AOS",
         "size_type": "объем",
         "size": "450 мл",
-        "barcode": "2404049097524",
+        "barcode": "2499949097524",
         "manufacturer": "New World",
         "brand": "Seventh Generation",
         "description": "средство для мытья посуды Crystal",
-        "price": "428.76 ₸"
+        "price": "428.76"
     },
     {
         "image_url": "ariel_1.png",
@@ -349,17 +349,17 @@
         "manufacturer": "New World",
         "brand": "Seventh Generation",
         "description": "Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
-        "price": "248.76 ₸"
+        "price": "248.76"
     },
     {
         "image_url": "bimax_1.png",
         "name": "BIOMAX",
         "size_type": "вес",
         "size": "1500 г",
-        "barcode": "4604049097546",
+        "barcode": "4604049011546",
         "manufacturer": "Best",
         "brand": "Seventh Generation",
         "description": "Порошок стиральный Автомат 100 пятен COMPACT",
-        "price": "300 ₸"
+        "price": "300"
     }
 ]

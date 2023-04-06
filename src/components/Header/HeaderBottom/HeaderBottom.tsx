@@ -10,7 +10,7 @@ import "./HeaderBottom.scss";
 import logoImg from "../../../svg/logo.svg";
 import fourRectsImg from "./svg/four_rects.svg";
 import callOrderImg from "./images/call_order.png";
-import IGood from '../../../data/IGood';
+import IGood from '../../../interfaces/IGood';
 
 
 interface HeaderBottomProps {

@@ -1,4 +1,4 @@
-import IGood from "../data/IGood";
+import IGood from "../interfaces/IGood";
 import { NameOrPrice, Order } from "../types/sorting";
 
 function getGoodsSortedByParam(

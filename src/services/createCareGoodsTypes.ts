@@ -1,5 +1,5 @@
 import { access } from "fs";
-import IGood from "../data/IGood";
+import IGood from "../interfaces/IGood";
 import { cosmeticsAndHygiene } from "../dictionaries/cosmeticsAndHygiene";
 
 function createCareGoodsTypes(goods: IGood[]): { [key: number]: string[] } {

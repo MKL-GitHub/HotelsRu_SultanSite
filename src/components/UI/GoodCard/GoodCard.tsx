@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
-import IGood from '../../../data/IGood';
+import IGood from '../../../interfaces/IGood';
 import { Link } from 'react-router-dom';
 import ToCartButton from '../ToCartButton/ToCartButton';
 
@@ -52,7 +52,7 @@ const GoodCard: FC<GoodCardProps> = ({ good }) => {
                     <span>{good.brand}</span>
                 </li>
                 <li className="GoodCard__PriceAndButton">
-                    <span className="GoodCard__Price">{good.price}</span>
+                    <span className="GoodCard__Price">{good.price} ₸</span>
                     <ToCartButton
                         className="GoodCard__ToCartBtn"
                         onClick={handleAddToCart}

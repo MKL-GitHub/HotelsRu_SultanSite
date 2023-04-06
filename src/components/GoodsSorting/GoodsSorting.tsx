@@ -3,7 +3,7 @@ import { FC, useState, useEffect } from 'react';
 import "./GoodsSorting.scss";
 
 import triangleImg from "../../svg/triangle.svg";
-import IGood from '../../data/IGood';
+import IGood from '../../interfaces/IGood';
 import { getGoodsSortedByParam } from '../../services/goodsSofring';
 import { NameOrPrice, Order } from '../../types/sorting';
 import Button from '../UI/Button/Button';

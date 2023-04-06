@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import IGood from '../../data/IGood';
+import IGood from '../../interfaces/IGood';
 import GoodCard from '../UI/GoodCard/GoodCard';
 
 

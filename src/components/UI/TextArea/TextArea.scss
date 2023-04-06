@@ -1,0 +1,11 @@
+.TextArea {
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #515151;
+        border: 3px solid transparent;
+        background-clip: padding-box;
+    }
+}

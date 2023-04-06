@@ -1,5 +1,5 @@
 import { FC, useState, useEffect, useContext } from 'react';
-import IGood from '../../../data/IGood';
+import IGood from '../../../interfaces/IGood';
 import QuantitySelector from '../../QuantitySelector/QuantitySelector';
 import BasketButton from '../BasketButton/BasketButton';
 import { CartContext } from '../../App/App';

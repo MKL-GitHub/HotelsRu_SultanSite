@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import Header from '../../components/Header/Header';
 import PageNavigationPanel from '../../components/PageNavigationPanel/PageNavigationPanel';
 import { ILocationDict, usePathArray } from '../../hooks/usePathArray';
-import IGood from '../../data/IGood';
+import IGood from '../../interfaces/IGood';
 import QuantitySelector from '../../components/QuantitySelector/QuantitySelector';
 import Button from '../../components/UI/Button/Button';
 import PriceListButton from '../../components/UI/PriceListButton/PriceListButton';

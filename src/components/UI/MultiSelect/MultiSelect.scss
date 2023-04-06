@@ -1,0 +1,68 @@
+.MultiSelect {
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    
+
+    &[data-is-opened=true] {
+        z-index: 10;
+
+        &::before {
+            content: "";
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    &__Triangle {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 40%;
+        right: 6px;
+        transform: translateY(-50%) rotate(45deg);
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+
+        &[data-is-opened=true] {
+            transform: rotate(-135deg);
+        }
+    }
+
+    &__Options,
+    &__SelectedOptions {
+        display: flex;
+        flex-direction: column;
+
+        &>li {
+            &:hover {
+                background-color: #e9e9e9;
+            }
+        }
+    }
+
+    &__Options {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #f0f0f0;
+        border: 1px solid #cccccc;
+        width: 100%;
+        
+        &>li {
+            &>button {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+
+    &__SelectedOptions {
+        &>li {
+            width: fit-content;
+        }
+    }
+}

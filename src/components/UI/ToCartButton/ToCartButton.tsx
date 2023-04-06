@@ -6,7 +6,7 @@ import { CartContext } from '../../App/App';
 import "./ToCartButton.scss";
 
 import cartImg from "./svg/grocery-cart.svg";
-import IGood from '../../../data/IGood';
+import IGood from '../../../interfaces/IGood';
 
 
 

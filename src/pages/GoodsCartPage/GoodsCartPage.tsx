@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import PageNavigationPanel from '../../components/PageNavigationPanel/PageNavigationPanel';
 import { ILocationDict, usePathArray } from '../../hooks/usePathArray';
 import Button from '../../components/UI/Button/Button';
-import IGood from '../../data/IGood';
+import IGood from '../../interfaces/IGood';
 import CartGood from '../../components/UI/CartGood/CartGood';
 import { GoodsState } from '../../types/Goods';
 import { CartContext } from '../../components/App/App';
