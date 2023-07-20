@@ -1,3 +1,6 @@
+<h2 align="center">Desktop</h2>
+<img src="https://github.com/MKL-GitHub/HotelsRu_SultanSite/assets/93647476/39ad26be-86d7-4773-9d0d-1b07ca40461f">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
